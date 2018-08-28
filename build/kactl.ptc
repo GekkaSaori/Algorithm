@@ -208,6 +208,7 @@
 \contentsline {subsection}{\texttt {Karatsuba.h}\hspace {0.2em}}{35}
 \contentsline {subsection}{\texttt {LIS.h}\hspace {0.2em}}{35}
 \contentsline {subsection}{\texttt {LCS.h}\hspace {0.2em}}{35}
+\contentsline {subsection}{\texttt {Discretization.h}\hspace {0.2em}}{35}
 \contentsline {section}{\numberline {10.3}Dynamic programming}{36}
 \contentsline {subsection}{\texttt {DivideAndConquerDP.h}\hspace {0.2em}}{36}
 \contentsline {subsection}{\texttt {KnuthDP.h}\hspace {0.2em}}{36}
