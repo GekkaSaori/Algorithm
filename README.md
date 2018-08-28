@@ -1,4 +1,4 @@
-# Alogrithm
+# Algorithm
 
 A Simple Algorithm &amp; Data Structure Library, mainly for OIer/ACMer, short enough.
 
