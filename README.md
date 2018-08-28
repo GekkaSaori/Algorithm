@@ -37,9 +37,9 @@ For users who are using \*nix, you should already had Python and the basic toolc
 
 对于 \*nix 用户，您应该具有 Python 与基本的系统工具链。您需要的唯一依赖是一个主流的 TeX 发行版（如 TeX Live 等），TeX Live 的最新版本可以通过 [CTAN](https://ctan.org/tex-archive/systems/texlive/Images) 获得。
 
-For users who are using Windows, what you need is Python 3 and a TeX mainstream distribution. You can get the latest Python on [Get Python](https://www.python.org/downloads/). You can get TeX Live through the link above.
+For users who are using Windows, what you need is Python 3 and a TeX mainstream distribution. You can get the latest Python on [Get Python](https://www.python.org/downloads/). You can get TeX Live through the link above. I prefer to use cygwin or MSYS2 for Windows. Please find one that suits you.
 
-对于 Windows 用户，您需要的是 Python 3 和一个主流的 TeX 发行版。您可以在 [Get Python](https://www.python.org/downloads/) 找到 Python 3 的最新版本。
+对于 Windows 用户，您需要的是 Python 3 、一个主流的 TeX 发行版以及适当的 \*nix 工具链。您可以在 [Get Python](https://www.python.org/downloads/) 找到 Python 3 的最新版本。您可以在上面的连接中获得 TeX Live。我推荐使用 cygwin 或 MSYS。请找一套适合您的工具链。
 
 Special For Windows XP users: You can't use TeX Live 2018 or later. You can get TeX Live 2017 instead, on [CTAN FTP](ftp://tug.org/historic/systems/texlive/2017/), and you can't use Python 3.5 or later, use Python 3.4.x instead. You can get Python 3.4.4 on [Python Release 3.4.4](https://www.python.org/downloads/release/python-344/).
 
@@ -67,17 +67,18 @@ Open a command prompt window and check everything below:
 
 打开命令提示符窗口，检查下列各项：
 
+- [ ] rm --version
 - [ ] python --version
 - [ ] xelatex --version
 
 Everything is fine if you don't see things like `'SOMETHING' is not recognized as an internal or external command,
-operable program or batch file.`.
+operable program or batch file.`. The build script also checks it for you and ensure everything is working as expected.
 
-如果您没有看到类似 `'什么东西' 不是内部或外部命令，也不是可运行的程序或批处理文件。`的提示，那说明一切工作正常。
+如果您没有看到类似 `'什么东西' 不是内部或外部命令，也不是可运行的程序或批处理文件。`的提示，那说明一切工作正常。编译脚本也会为您检查依赖，确保一切工作正常。
 
-If you are experiencing problems, check your environment varible and ensure both the path contains XeLaTeX and Python are included.
+If you are experiencing problems, check your environment varible and ensure that your toolchain, XeLaTeX and Python are included in your PATH.
 
-如果您遇到了问题，请检查环境变量并保证 XeLaTeX 和 Python 的路径在环境变量中。
+如果您遇到了问题，请检查您的工具链、XeLaTeX 和 Python 的路径在环境变量中。
 
 ### Hacking / 修改本项目
 
